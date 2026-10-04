@@ -1,7 +1,7 @@
 #ifndef _TOKENIZER_
 #define _TOKENIZER_
 
-
+int stringcomp(char*a, char *b);
 /* Return true (non-zero) if c is a whitespace characer
    ('\t' or ' ').  
    Zero terminators are not printable (therefore false) */
