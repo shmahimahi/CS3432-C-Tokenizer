@@ -5,12 +5,11 @@ static int debug=0;
 
 
 int stringcomp(char*a, char *b){
-  while (*a && *b){
-    int diff = *a++ - *b++;
-    if (diff) return diff;
-  }
-  if (!*a && !*b) return 0;
-  return (*a) ? 1 : -1;
+  while (*a != 0 && *a == *b) {
+        a++;
+        b++;
+    }
+  return *a == *b;
 }
 
 int space_char(char c){
